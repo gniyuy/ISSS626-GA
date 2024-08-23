@@ -9,16 +9,24 @@ website:
         text: Home
       - href: about.qmd
         text: About
+      - text: "Hands-on Exercises"
+        menu: 
+          - text: "Hands-on Exercise 1.1"
+            href: "Hands-on_Ex/Hands-on Exercise 1.1.html"          
+          - text: "Hands-on Exercise 1.2"
+            href: "Hands-on_Ex/Hands-on Exercise 1.2.html"  
 
 format:
   html:
     theme: lux
     css: styles.css
     toc: true
+    page-layout: full
+    smooth-scroll: true
     background-color: "#F5F5F5"
     banner-color: "white"
     font-family: "Roboto"
-
+ 
 editor: visual
 
 
