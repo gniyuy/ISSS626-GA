@@ -2,18 +2,23 @@ project:
   type: website
 
 website:
-  title: "ISSS626-GA"
+  title: "Mapping the Unseen"
   navbar:
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
+      - href: about.qmd
+        text: About
 
 format:
   html:
-    theme: cosmo
+    theme: lux
     css: styles.css
     toc: true
+    background-color: "#F5F5F5"
+    banner-color: "white"
+    font-family: "Roboto"
 
 editor: visual
+
 
