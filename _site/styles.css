@@ -8,26 +8,38 @@
     background-color: white; /* White background for the navbar */
 }
 
+/* Override Bootstrap's default font color */
+.navbar .navbar-brand, .navbar .navbar-nav .nav-link {
+    color: black !important; /* Ensures the text color is black */
+    font-weight: bold;
+}
+
+/* Override text color for all banner elements */
+.banner, .banner h1, .navbar .navbar-nav .nav-link {
+    color: black !important; /* Forces black color */
+    font-weight: bold;
+}
+
+/* Dropdown menu links */
+.dropdown-menu .dropdown-item {
+    color: black !important; /* Set text color to black */
+}
+
+/* Dropdown menu links on hover */
+.dropdown-menu .dropdown-item:hover {
+    color: black !important; /* Ensure hover color remains black */
+    background-color: #f8f9fa !important; /* Optional: Set a background color on hover */
+}
+
 /* Style for the logo */
 .logo {
-    margin-right: 20px;
+    margin-right: 40px;
 }
 
 /* Style for navbar links */
 .navbar-links {
     display: flex;
     gap: 20px;
-}
-
-.navbar-links a {
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif;
-    color: #000; /* Black text for links */
-    font-weight: bold;
-}
-
-.navbar-links a:hover {
-    color: #5a5a5a; /* Dark gray color on hover */
 }
 
 /* Style for the page title */

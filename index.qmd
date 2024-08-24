@@ -1,1 +1,9 @@
+---
+format: 
+  html:
+    theme: lux
+    css: styles.css
+    page-layout: custom
+---
+
 ![](images/169951-842348732_small.gif){width="100%"}
