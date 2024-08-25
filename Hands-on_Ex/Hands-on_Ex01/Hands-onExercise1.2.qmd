@@ -37,13 +37,15 @@ mpsz <- st_read(dsn = "C:/Users/gniyu/OneDrive/Desktop/SMU/Sem 3/ISSS626-G1-Geos
                 layer = "MP14_SUBZONE_WEB_PL")
 ```
 
-You can examine the content of `mpsz` by using the code chunk below.
+We can examine the content of `mpsz` by using the code chunk below.
 
 ```{r}
 mpsz
 ```
 
 Notice that only the first ten records will be displayed. Do you know why?
+
+This behavior occurs because R is designed to provide a quick preview of the dataset rather than printing the entire content, which might be too large to display in the console or output. This preview helps to give an overview of the dataset without overwhelming the user with too much information at once.
 
 ### Importing Attribute Data into R
 
@@ -57,7 +59,7 @@ popdata <- read_csv("C:/Users/gniyu/OneDrive/Desktop/SMU/Sem 3/ISSS626-G1-Geospa
 
 ### Data Preparation
 
-Before a thematic map can be prepared, you are required to prepare a data table with year 2020 values. The data table should include the variables PA, SZ, YOUNG, ECONOMY ACTIVE, AGED, TOTAL, DEPENDENCY.
+Before a thematic map can be prepared, we can prepare a data table with year 2020 values. The data table should include the variables PA, SZ, YOUNG, ECONOMY ACTIVE, AGED, TOTAL, DEPENDENCY.
 
 -   YOUNG: age group 0 to 4 until age groyup 20 to 24,
 

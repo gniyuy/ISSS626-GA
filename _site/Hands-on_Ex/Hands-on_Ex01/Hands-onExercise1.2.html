@@ -248,7 +248,7 @@ Bounding box:  xmin: 2667.538 ymin: 15748.72 xmax: 56396.44 ymax: 50256.33
 Projected CRS: SVY21</code></pre>
 </div>
 </div>
-<p>You can examine the content of&nbsp;<code>mpsz</code>&nbsp;by using the code chunk below.</p>
+<p>We can examine the content of&nbsp;<code>mpsz</code>&nbsp;by using the code chunk below.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>mpsz</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -294,6 +294,7 @@ First 10 features:
 </div>
 </div>
 <p>Notice that only the first ten records will be displayed. Do you know why?</p>
+<p>This behavior occurs because R is designed to provide a quick preview of the dataset rather than printing the entire content, which might be too large to display in the console or output. This preview helps to give an overview of the dataset without overwhelming the user with too much information at once.</p>
 </section>
 <section id="importing-attribute-data-into-r" class="level3" data-number="2.3">
 <h3 data-number="2.3" class="anchored" data-anchor-id="importing-attribute-data-into-r"><span class="header-section-number">2.3</span> Importing Attribute Data into R</h3>
@@ -315,7 +316,7 @@ dbl (2): Pop, Time
 </section>
 <section id="data-preparation" class="level3" data-number="2.4">
 <h3 data-number="2.4" class="anchored" data-anchor-id="data-preparation"><span class="header-section-number">2.4</span> Data Preparation</h3>
-<p>Before a thematic map can be prepared, you are required to prepare a data table with year 2020 values. The data table should include the variables PA, SZ, YOUNG, ECONOMY ACTIVE, AGED, TOTAL, DEPENDENCY.</p>
+<p>Before a thematic map can be prepared, we can prepare a data table with year 2020 values. The data table should include the variables PA, SZ, YOUNG, ECONOMY ACTIVE, AGED, TOTAL, DEPENDENCY.</p>
 <ul>
 <li><p>YOUNG: age group 0 to 4 until age groyup 20 to 24,</p></li>
 <li><p>ECONOMY ACTIVE: age group 25-29 until age group 60-64,</p></li>
