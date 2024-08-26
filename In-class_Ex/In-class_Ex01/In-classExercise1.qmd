@@ -1,0 +1,54 @@
+---
+title: "In-class Exercise 1"
+author: "Tai Yu Ying"
+date: "Aug 26 2024"
+date-modified: "last-modified"
+execute: 
+  eval: true
+  echo: true
+  message: false
+  freeze: true
+---
+
+## The code
+
+```{r}
+pacman::p_load(tidyverse, sf, tmap, ggstatsplot)
+```
+
+## Working with Master Plan Planning Sub-zone Data
+
+This code chunk imports shapefile.
+
+```{r}
+mpsz14_shp <- st_read(dsn = "C:/Users/gniyu/OneDrive/Desktop/SMU/Sem 3/ISSS626-G1-Geospatial Analytics and Applications/gniyuy/ISSS626-GA/In-class_Ex/In-class_Ex01/Data", 
+                  layer = "MP14_SUBZONE_WEB_PL")
+```
+
+This code chunk imports kml file.
+
+```{r}
+mpsz14_kml <- st_read("C:/Users/gniyu/OneDrive/Desktop/SMU/Sem 3/ISSS626-G1-Geospatial Analytics and Applications/gniyuy/ISSS626-GA/In-class_Ex/In-class_Ex01/Data/MasterPlan2014SubzoneBoundaryWebKML.kml")
+```
+
+```{r}
+st_write(mpsz14_shp,
+        "C:/Users/gniyu/OneDrive/Desktop/SMU/Sem 3/ISSS626-G1-Geospatial Analytics and Applications/gniyuy/ISSS626-GA/In-class_Ex/In-class_Ex01/Data/MasterPlan2014SubzoneBoundaryWebKML.kml",
+        delete_dsn = TRUE)
+```
+
+```{r}
+mpsz19_shp <- st_read(dsn = "C:/Users/gniyu/OneDrive/Desktop/SMU/Sem 3/ISSS626-G1-Geospatial Analytics and Applications/gniyuy/ISSS626-GA/In-class_Ex/In-class_Ex01/Data", 
+                  layer = "MPSZ-2019")
+```
+
+```{r}
+mpsz19_kml <- st_read("C:/Users/gniyu/OneDrive/Desktop/SMU/Sem 3/ISSS626-G1-Geospatial Analytics and Applications/gniyuy/ISSS626-GA/In-class_Ex/In-class_Ex01/Data/MasterPlan2019SubzoneBoundaryNoSeaKML.kml")
+```
+
+
+```{r}
+mpsz19_shp <- st_read(dsn = "data",
+                      layer = "MPSZ-2019") %>%
+  st_transform(crs = 3414)
+```
