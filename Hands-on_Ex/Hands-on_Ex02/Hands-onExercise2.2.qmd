@@ -1,0 +1,16 @@
+---
+format: 
+  html:
+    theme: lux
+    number-sections: true
+
+title: "Hands-on Exercise 2.2"
+author: "Tai Yu Ying"
+date: "Aug 31 2024"
+date-modified: "last-modified"
+execute: 
+  eval: true
+  echo: true
+  message: false
+  freeze: true
+---
