@@ -247,7 +247,7 @@ You can take a quick look at the summary statistics of the newly created ppp obj
 summary(childcare_ppp)
 ```
 
-Notice the warning message about duplicates. In spatial point patterns analysis an issue of significant is the presence of duplicates. The statistical methodology used for spatial point patterns processes is based largely on the assumption that process are simple, that is, that the points cannot be coincident.
+In spatial point patterns analysis an issue of significant is the presence of duplicates. The statistical methodology used for spatial point patterns processes is based largely on the assumption that process are simple, that is, that the points cannot be coincident.
 
 ### Handling duplicated points
 
@@ -270,7 +270,7 @@ If we want to know how many locations have more than one point event, we can use
 sum(multiplicity(childcare_ppp) > 1)
 ```
 
-The output shows that there are 128 duplicated point events.
+The output shows that there are 0 duplicated point events.
 
 To view the locations of these duplicate point events, we will plot `childcare` data by using the code chunk below.
 
